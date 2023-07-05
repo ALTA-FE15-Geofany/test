@@ -348,9 +348,98 @@ console.log(hasiil)
 let bilanganN = 12
 let totalBilangan = 0
 for (i = 1; i < bilanganN; i++) {
-    if(bilanganN % i === 0 ){
+    if (bilanganN % i === 0) {
         totalBilangan += i
     }
 }
 
-console.log("total bilangan faktorial ",bilanganN," ",totalBilangan)
+console.log("total bilangan faktorial ", bilanganN, " ", totalBilangan)
+
+let jariJari = 4
+let tinggi = 20
+
+function hitungluaspermukaantabung(jariJari, tinggi) {
+    luasAlas = Math.PI * Math.pow(jariJari, 2)
+
+    luasSelimut = 2 * Math.PI * jariJari * tinggi
+
+    luasPermukaan = 2 * luasAlas * luasSelimut
+
+    return luasPermukaan
+}
+
+const hasilhitungluas = hitungluaspermukaantabung(jariJari, tinggi)
+console.log(`hasil luas hitung permukaan tabung, ${hasilhitungluas}`)
+
+const nilaiMahasiswa = 80
+
+if (nilaiMahasiswa >= 80) {
+    console.log("A")
+} else {
+    console.log("err")
+}
+
+let faktor = 20
+function getFaktorNumber(faktor) {
+
+    for (i = 1; i < faktor; i++) {
+        if (faktor % i === 0) {
+            console.log(i)
+        }
+    }
+    return faktor
+}
+let hasilgetNumber = getFaktorNumber(faktor)
+console.log(`hasil get number ${hasilgetNumber}`)
+
+let bilanganPrima = 4
+let tempBilangan = 0
+
+for (i = 1; i <= bilanganPrima; i++) {
+    if (bilanganPrima % i == 0) {
+        tempBilangan += 1
+    }
+}
+if (tempBilangan == 2) {
+    console.log("Bilangan Prima")
+} else {
+    console.log("Bilangan Non Prima")
+}
+
+test = bilanganPrima % 1
+console.log(test)
+
+let bintang = 10
+let baris = ""
+for (i = 1; i < bintang; i++) {
+    for (j = 0; j < i; j++) {
+        baris += "*"
+    }
+    baris += "\n"
+}
+
+console.log(baris)
+
+const dataupper = "SFJDHSFSDFS"
+let hasillower = dataupper.toLowerCase()
+console.log(hasillower)
+
+
+let inputPalindrome = "denganmu"
+
+function getPalindrome(inputPalindrome) {
+    let jadiKecil = inputPalindrome.toLowerCase().replace(/\s/g, '');
+
+    let jadiArray = jadiKecil.split('')
+    console.log(jadiArray)
+    let gabungkan = jadiArray.reverse()
+    console.log(gabungkan)
+    let jadiString = gabungkan.join('')
+    console.log(typeof jadiString)
+    if (inputPalindrome == jadiString) {
+        console.log("ini adalah palindrom")
+    } else {
+        console.log("ini bukan palindrome")
+    }
+}
+getPalindrome(inputPalindrome)
