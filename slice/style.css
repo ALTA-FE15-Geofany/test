@@ -1,0 +1,15 @@
+:root{
+    box-sizing: border-box;
+}
+
+html.body,* {
+    margin: 0;
+    padding: 0
+}
+#app{
+    height: 100vh;
+}
+.element1 {
+    text-align : center;
+    font-size: 30px;    
+}

@@ -67,6 +67,7 @@ const mahasiswa = [{
     id: 1
 }
 ];
+
 // mencari total lulus
 function getMahasiswa(mahasiswa) {
     let lulus = 0
@@ -312,6 +313,7 @@ const biodata = [{
 
     ]
 }]
+
 biodata.forEach(object => {
     delete object['jk'];
 })
@@ -425,7 +427,7 @@ let hasillower = dataupper.toLowerCase()
 console.log(hasillower)
 
 
-let inputPalindrome = "denganmu"
+let inputPalindrome = "uwu"
 
 function getPalindrome(inputPalindrome) {
     let jadiKecil = inputPalindrome.toLowerCase().replace(/\s/g, '');
@@ -443,3 +445,124 @@ function getPalindrome(inputPalindrome) {
     }
 }
 getPalindrome(inputPalindrome)
+
+
+// hitung hasil pangkat dengan function
+function getPangkat(n, m) {
+    hasilhitungPangkat = n ** m
+    return hasilhitungPangkat
+}
+
+console.log(getPangkat(2, 3))
+console.log(getPangkat(2, 12))
+console.log(getPangkat(7, 2))
+console.log(getPangkat(9, 3))
+
+let angkaPangkat = 2
+let pangkat = 3
+hasilPangkat = angkaPangkat ** pangkat
+
+console.log("hasil hitung", angkaPangkat, "pangkat", pangkat, "adalah", hasilPangkat)
+
+let tempo = 0
+// tempo 1
+function getInBilanganPrima(bil) {
+    for (i = 1; i < bil; i++) {
+        if (bil % i == 0) {
+            tempo += 1
+        }
+
+    }
+    if (tempo % 2 == 0) {
+        console.log("bilangan mati")
+    } else {
+        console.log("err")
+    }
+}
+console.log(getInBilanganPrima(23))
+
+
+function isPrimeNumber(num) {
+    if (num <= 1) {
+        return false;
+    }
+
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+function getAllPrimes(n) {
+    var primes = [];
+
+    for (let i = 2; i <= n; i++) {
+        if (isPrimeNumber(i)) {
+            primes.push(i);
+        }
+    }
+
+    return primes;
+}
+
+console.log(getAllPrimes(12));
+
+//   import newData from '/test/data.js'
+
+//   console.log(newData)
+
+function getPalindrom(text) {
+    const lowertxt = text.toLowerCase()
+    console.log(lowertxt)
+    const splitTxt = lowertxt.split('')
+    console.log(splitTxt)
+    const reverseTxt = splitTxt.reverse()
+    console.log(reverseTxt)
+    const stringTxt = reverseTxt.join('')
+    console.log(stringTxt)
+    if (lowertxt === stringTxt) {
+        console.log("true")
+    } else {
+        console.log("false")
+    }
+}
+
+getPalindrom("OKO")
+let person = [{
+    name: "john",
+    age: 30,
+    pet: "dog"
+}, {
+    name: "john",
+    age: 30,
+    pet: "dog"
+},{
+    name: "john",
+    age: 30,
+    pet: "dog"
+}]
+let hasilName = []
+for (i = 0; i <= person.length; i++) {
+    for(let property in person[i]){
+        if(property == "name"){
+            hasilName.push({key: property,value: person[i][property]})
+        }
+    }
+}
+console.log(hasilName)
+// let hasilName = person.map(i => i.age)
+console.log(person.map(i => i.name))
+
+
+const orangGila = [1,2,3,4,3,5,4,,46,4,]
+const orangStress = []
+const getNilaiArray = ((index,element) =>{
+    console.log("nilai indeknya ke ",element,"nilai elementnya", index)
+})
+orangGila.push(0,1000,999999999)
+orangGila.forEach(getNilaiArray)
+console.log(orangGila.indexOf("made"))
+

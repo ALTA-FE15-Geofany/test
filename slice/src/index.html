@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="icon" href="../public/assets/logo.svg" type="image/icon type" />
+    <title>Edufree</title>
+  </head>
+  <body>
+    <!-- navbar section -->
+    <nav class="py-9 px-4">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between">
+          <h1 class="text-2xl line- font-bold">
+            Edufree <span class="font-bold text-3xl">.</span>
+          </h1>
+          <div class="hidden lg:block">
+            <ul class="flex justify-center gap-16">
+              <li class="font-semibold text-sm">
+                <a href=""> Home </a>
+              </li>
+              <li class="font-semibold text-sm">
+                <a href="" class="opacity-40"> Tentang Kami </a>
+              </li>
+              <li class="font-semibold text-sm">
+                <a href="" class="opacity-40"> Kursus </a>
+              </li>
+              <li class="font-semibold text-sm">
+                <a href="" class="opacity-40"> FAQ </a>
+              </li>
+              <li class="font-semibold text-sm">
+                <a href="" class="opacity-40"> Blog </a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex gap-2">
+            <button
+              class="sm:hidden md:block px-8 py-2 text-sm font-bold hidden rounded-3xl"
+            >
+              Sign In
+            </button>
+            <button class="px-8 py-2 font-bold text-sm bg-bgbutton rounded-3xl">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="fixed bottom-0 left-0 right-0 p-5 bg-white z-10 lg:hidden md:hidden"
+      >
+        <ul class="flex justify-between">
+          <li>
+            <div class="p-2 border-2 border-bgbutton rounded-full">
+              <a
+                href=""
+                class="flex flex-initial w-32 gap-3 justify-center items-center text-txt-button"
+              >
+                <ion-icon name="planet-outline" class="text-2xl"></ion-icon>
+                <span class="font-medium">Home</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="p-2">
+              <a href="" class="flex justify-center items-center">
+                <ion-icon
+                  name="pricetag-outline"
+                  class="text-2xl opacity-50"
+                ></ion-icon>
+                <!-- <span class="font-normal opacity-50">Price</span> -->
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="p-2">
+              <a href="" class="flex justify-center items-center">
+                <ion-icon
+                  name="desktop-outline"
+                  class="opacity-50 text-2xl"
+                ></ion-icon>
+                <!-- <span class="font-normal opacity-50">Study</span> -->
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="p-2">
+              <a href="" class="flex justify-center items-center">
+                <ion-icon
+                  name="help-circle-outline"
+                  class="text-2xl opacity-50"
+                ></ion-icon>
+                <!-- <span class="font-normal opacity-50">FAQ</span> -->
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="p-2">
+              <a href="" class="flex justify-center items-center">
+                <ion-icon
+                  name="bookmark-outline"
+                  class="text-2xl opacity-50"
+                ></ion-icon>
+                <!-- <span class="font-normal opacity-50">Blog</span> -->
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- hero section  -->
+    <section class="main">
+      <div class="container p-4 mx-auto">
+        <div class="grid grid-cols-12">
+          <div
+            class="col-span-12 lg:col-span-4 gap-2 md:order-2 lg:order-1 order-2"
+          >
+            <div
+              class="justify-start lg:justify-center lg:mt-20 lg:text-center"
+            >
+              <p
+                class="py-2 px-1 text-bgbutton text-center lg:text-[20px] lg:text-start font-normal text-lg"
+              >
+                <ion-icon name="balloon-outline"></ion-icon>
+                welcome
+              </p>
+              <h1
+                class="font-bold px-1 mt-10 md:mt-1 leading-tight lg:text-[50px] text-center lg:text-start text-4xl"
+              >
+                Work the <span class="text-bgbutton">way</span> that works for
+                you
+              </h1>
+              <p
+                class="font-semibold px-1 opacity-50 py-2 lg:text-[15px] lg:text-start text-center leading-normal text-sm"
+              >
+                A community of lifelong learners, responsible global citizens,
+                and champions of our own success.
+              </p>
+            </div>
+            <div class="py-5 flex gap-4 items-center justify-center">
+              <button
+                class="px-8 justify-center items-center py-2 text-white font-semibold bg-bgbutton text-sm rounded-full drop-shadow-sm-shadow"
+              >
+                Get Started
+              </button>
+              <button
+                class="px-8 py-2 border-2 justify-center items-center rounded-full border-[#EEE] text-txt-button font-medium text-sm opacity-50 bg-whiterounded-full"
+              >
+                See Project
+              </button>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-8 md:order-1 lg:order-1 order-1">
+            <div class="lg:justify-end lg:mt-20">
+              <img src="../public/assets/imgRight.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-12">
+          <div class="col-span-12 py-4 mt-10">
+            <div class="flex gap-4 lg:justify-center lg:gap-52 justify-between">
+              <div class="items-center w-16 justify-center">
+                <img src="../public/assets/brand 1.svg" alt="" />
+              </div>
+              <div class="items-center w-16 justify-center">
+                <img src="../public/assets/brand 2.svg" alt="" />
+              </div>
+              <div class="items-center w-16 justify-center">
+                <img src="../public/assets/brand 3.svg" alt="" />
+              </div>
+              <div class="items-center w-16 justify-center">
+                <img src="../public/assets/brand 4.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="whatCan">
+          <div class="grid grid-cols-12">
+            <div class="col-span-12 py-4 mt-10">
+              <div class="flex items-center justify-center">
+                <h1 class="font-semibold text-[25px]">
+                  What you
+                  <span class="font-semibold text-[25px] text-bgbutton"
+                    >can do ?</span
+                  >
+                </h1>
+              </div>
+              <div
+                class="flex py-4 mt-5 items-center gap-4 text-center justify-between"
+              >
+                <!-- Financial planning flex -->
+                <div class="p-4 justify-center items-center flex flex-col">
+                  <div>
+                    <img src="../public/assets/can1.svg" alt="" />
+                  </div>
+                  <h2 class="font-semibold p-2 text-txt-button">
+                    Business Planning
+                  </h2>
+                  <p
+                    class="font-medium hidden md:block lg:block text-center p-2 text-sm opacity-50"
+                  >
+                    Our expert team sensible decision about their money, to
+                    ensure they achieve the life goals. A financial plan.
+                  </p>
+                </div>
+                <!-- end flex section -->
+
+                <!-- Financial planning flex -->
+                <div class="p-4 justify-center items-center flex flex-col">
+                  <div>
+                    <img src="../public/assets/can2.svg" alt="" />
+                  </div>
+                  <h2 class="font-semibold p-2 text-txt-button">
+                    Financial Planning
+                  </h2>
+                  <p
+                    class="font-medium hidden md:block lg:block text-center p-2 text-sm opacity-50"
+                  >
+                    Our expert team sensible decision about their money, to
+                    ensure they achieve the life goals. A financial plan.
+                  </p>
+                </div>
+                <!-- end flex section -->
+
+                <!-- Market Analysis planning flex -->
+                <div class="p-4 justify-center items-center flex flex-col">
+                  <div>
+                    <img src="../public/assets/can3.svg" alt="" />
+                  </div>
+                  <h2 class="font-semibold p-2 text-txt-button">
+                    Market Analysis
+                  </h2>
+                  <p
+                    class="font-medium hidden md:block lg:block p-2 text-center text-sm opacity-50"
+                  >
+                    Our expert team sensible decision about their money, to
+                    ensure they achieve the life goals. A financial plan.
+                  </p>
+                </div>
+                <!-- end flex section -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="tittlrOur">
+          <div class="grid grid-cols-12">
+            <div class="col-span-12 py-4 mt-10">
+              <div class="flex items-center justify-center">
+                <h1 class="font-semibold text-[25px]">
+                  Our
+                  <span class="font-semibold text-[25px] text-bgbutton"
+                    >Feature</span
+                  >
+                </h1>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- our feature section -->
+        <section class="ourFeature">
+          <div class="grid grid-cols-12">
+            <!-- grid for peoople section -->
+            <div
+              class="col-span-12 lg:col-span-8 lg:block md:block hidden py-4 mt-10"
+            >
+              
+              <div class="flex items-center justify-start">
+                <img src="../public/assets/peoople.svg" alt="" />
+              </div>
+            </div>
+            <!-- grid for manage everything section -->
+            <div class="col-span-12 lg:col-span-4 sm:order-2 py-4">
+              <div class="lg:mt-10">
+                <div class="flex items-center justify-center">
+                  <h1
+                    class="font-semibold text-center sm:text-3xl lg:text-[50px] lg:leading-tight text-txt-button"
+                  >
+                    <span class="text-bgbutton">Manage</span> everything in one
+                    <span class="text-bgbutton">workspace</span>
+                  </h1>
+                </div>
+                <div class="flex items-center mt-5 justify-center">
+                  <span
+                    class="font-bold px-1 opacity-50 py-2 lg:text-[15px] lg:text-start text-center leading-normal text-sm"
+                  >
+                    Planning, tracking and delivering your team’s best work has
+                    never been easier. An integrated workspace that’s simple to
+                    use, TeamFlow lets you spend less time managing your work
+                    and more time actually doing it. Planning, tracking and
+                    delivering your team’s best work has never been easier. An
+                    integrated workspace that’s simple to use, TeamFlow lets you
+                    spend less time managing your work and more time actually
+                    doing it.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- set Up teacher section -->
+        <section class="setUp">
+          <div class="grid grid-cols-12 gap-2">
+            <!-- grid for manage everything section -->
+            <div
+              class="col-span-12 hidden lg:bg-[#FAFAFF] lg:block rounded-lg lg:col-span-8 sm:order-2 py-4"
+            >
+              <div class="flex items-center justify-center">
+                <div class="hidden lg:block lg:w-3/4">
+                  <img src="../public/assets/teacher.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- grid for peoople section -->
+            <div class="col-span-12 lg:col-span-4 lg:block md:block py-4 mt-10">
+              <div class="flex items-center justify-center">
+                <h1
+                  class="font-semibold text-center lg:text-start sm:text-3xl lg:text-[50px] lg:leading-tight text-txt-button"
+                >
+                  <span class="text-bgbutton">Set up</span> in minutes
+                  <span class="text-bgbutton">workspace</span>
+                </h1>
+              </div>
+              <div class="flex items-center mt-5 justify-center">
+                <span
+                  class="font-bold px-1 opacity-50 py-2 lg:text-[15px] lg:text-start text-center leading-normal text-sm"
+                >
+                  Get started fast with hundreds of visual and customizable
+                  templates - or create your own. Use our free online template
+                  maker to create beautiful template in minutes. Choose from
+                  hundreds of pre-made templates and tell stories with data with
+                  our easy drag-and-drop infographic creator.
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="testimoni">
+          <div class="grid grid-cols-12">
+            <div class="col-span-12 py-4 mt-10">
+              <div class="flex items-center justify-center">
+                <h1 class="font-semibold text-[25px]">
+                  Client
+                  <span class="font-semibold text-[25px] text-bgbutton"
+                    >Testimonial</span
+                  >
+                </h1>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="map">
+          <div class="grid grid-cols-12">
+            <div class="col-span-12 py-4 mt-10">
+              <div class="flex items-center justify-center">
+               <img src="../public/assets/map.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="map">
+          <div class="grid grid-cols-12">
+            <div class="col-span-12 py-4 mt-10">
+              <div class="flex items-center justify-center flex-col">
+                <div class="text-[20px] font-bold text-bgbutton">
+                support
+               </div>
+               <div class="font-semibold py-2 text-txt-button">
+                sbscribe Newsletter & get
+               </div>
+               <div class="font-medium py-2 opacity-50">
+                Company News
+               </div>
+              </div>
+              <div class="flex justify-center">
+                <div class="">
+                  <form>   
+                    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                    <div class="relative">
+                        <input type="search" id="default-search" class="block  w-full p-4 pl-10 text-sm text-gray-900 border border-bgbutton rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Your Email" required>
+                        <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-bgbutton focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">
+                          <ion-icon name="send-outline"></ion-icon>
+                        </button>
+                    </div>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+    </section>
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>
